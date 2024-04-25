@@ -37,7 +37,13 @@
         Me.Size = New Size(50, 50)
         Me.Visible = True
         Me.Enabled = True
-        Me.BackColor = Color.Red
+
+        If player = True Then
+            Me.BackColor = Color.Blue
+        Else
+            Me.BackColor = Color.Orange
+        End If
+
         Me.BorderStyle = BorderStyle.FixedSingle
         Dim plyr As String
         If player Then
